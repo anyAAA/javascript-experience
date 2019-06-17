@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>js小白入门</title>
+
+	<style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #111;
+		}
+	</style>
+</head>
+
+<body>
+	<ul>
+		<li><a href="index.html">demo01</a></li>
+		<li><a href="demo02.html">demo02</a></li>
+		<li><a href="demo03.html">demo03</a></li>
+		<li><a href="demo04.html">demo04</a></li>
+		<li><a href="demo05.html">demo05</a></li>
+		<li><a href="demo06.html">demo06</a></li>
+		<li><a href="demo07.html">demo07</a></li>
+		<li><a href="demo08.html">demo08</a></li>
+		<li><a href="demo09.html">demo09</a></li>
+	</ul>
+
+	<!-- 1.点击button显示日期 -->
+	<div class="dateClickkk">
+		<h3>我的第一个Javascript程序</h3>
+		<p id="demo">这是一个段落</p>
+		<button type="button" onclick="dateClick()">显示日期</button>
+	</div>
+	<!-- 2.点击，打印 你好 -->
+	<input type="button" value="ClickMe" onclick="alert('2.点击，打印 你好');">
+	<!-- 3.将js引入到a 进行跳转-->
+	<a href="javascript:alert('3.将js引入到a 进行跳转')">弹出</a>
+	<!-- 4.网页body内  document.write -->
+	<a href="javascript:document.write('跳出语句')">输入文字</a>
+	<!-- 5. -->
+	<input type="button" value="点击按钮弹出" name="bt" onclick="alert('点击按钮弹出')">
+	<input type="button" value="鼠标移入弹出" name="bt" onmouseover="document.write('onmouseover')">
+	<!-- <p onmouseover="">0.0鼠标移入我会刷新页面哦0.0</p> -->
+
+
+
+
+
+	<script src="js/demo01.js"></script>
+	<script>
+		// 点击显示日期 
+		function dateClick() {
+			// 显示出日期
+			document.getElementById("demo").innerHTML = Date();
+		}
+
+
+	</script>
+</body>
+
+</html>
